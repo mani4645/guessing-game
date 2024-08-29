@@ -1,0 +1,73 @@
+h1 {
+    text-align: center;
+    text-shadow: 3px 5px 5px red;
+    animation-name: mani;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mani {
+    0% {
+        text-shadow: 3px 5px 5px red;
+        transform:translate(5px);    
+    }
+
+    50% {
+        text-shadow: 3px 5px 5px yellow;
+        transform:translate(-5px); 
+    }
+
+    100% {
+        text-shadow: 3px 5px 5px brown;
+        transform:translate(5px); 
+    }
+}
+
+#num {
+    padding: 10px 15px 10px 15px;
+    margin: 10px 15px 10px 15px;
+    border-radius: 10px 20px 10px 20px;
+    animation-name: manii;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes manii {
+    0% {
+        border-radius: 10px 20px 10px 20px;
+        transform:translate(1px);    
+    }
+
+    50% {
+        border-radius: 20px 10px 20px 10px;
+        transform:translate(-1px); 
+    }
+
+    100% {
+        border-radius: 10px 20px 10px 20px;
+        transform:translate(1px); 
+    }
+}
+
+button {
+    padding: 10px 15px 10px 15px;
+    margin: 10px 15px 10px 15px;
+    background-color: red;
+    border: none;
+    color: aliceblue;
+    border-radius: 10px 20px 10px 20px;
+    box-shadow: 5px 7px 10px black;
+}
+
+button:hover {
+    color: black;
+    background-color: blue;
+    transform:translateY(-3px);
+    transition: background-color 1s,
+                color 3s,
+                transform 1s;
+}
+
+#result, #score {
+    text-shadow: 5px 4px 10px black;
+}
